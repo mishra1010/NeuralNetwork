@@ -14,5 +14,7 @@ Layer of Neurons - This is where things become tricky. Main power of neurons com
 
 neuron 1, 2 and 3 have inputs and weights associated from these inputs. 4 inputs means 4 weights for a neuron
 
+Whatever we see here is just for 3 neurons and if we have 50 neurons then we cannot just go on writing summation from 50 neurons. So, it is better to use loops
+
 
 
