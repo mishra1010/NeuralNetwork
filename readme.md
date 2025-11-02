@@ -1,4 +1,4 @@
-# Neural Networks from Scratch
+# Day 1 -  Neural Networks from Scratch
 
 ![alt text](attachments/Neuronswith3inputs.png)
 
@@ -19,6 +19,16 @@ Whatever we see here is just for 3 neurons and if we have 50 neurons then we can
 Next we will see why we can use numpy to clculate this
 
 
+
+
+# Day 2 - Code Neurons with Numpy
+
+1. Use numpy to code a neuron
+
+2. Use numpy to code a layer of neurons
+
+3. code a batch of data coming in to a layer of neurons
+
 # Neural Networks with numpy for dotproduct in coding neurons and layers
 
 Numpy is one of the most popular packages for scientific computing in python. Extensively used in neural network modeling.
@@ -26,8 +36,4 @@ Numpy is one of the most popular packages for scientific computing in python. Ex
 Dotproduct is important in Neural Networks
 
 np.dot()
-
-
-
-
 
