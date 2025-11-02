@@ -19,4 +19,15 @@ Whatever we see here is just for 3 neurons and if we have 50 neurons then we can
 Next we will see why we can use numpy to clculate this
 
 
+# Neural Networks with numpy for dotproduct in coding neurons and layers
+
+Numpy is one of the most popular packages for scientific computing in python. Extensively used in neural network modeling.
+
+Dotproduct is important in Neural Networks
+
+np.dot()
+
+
+
+
 
