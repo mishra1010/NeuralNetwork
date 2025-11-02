@@ -37,3 +37,24 @@ Dotproduct is important in Neural Networks
 
 np.dot()
 
+![alt text](attachments/dotproduct.png)
+
+dot product between vector and a matrix. If number of columns in first mtrix is same as number of rows in the second,
+then matrix multiplication is possible. output will be 1*3 dimensions
+
+![alt text](attachments/vectornmatrix.png)
+![alt text](attachments/muldetails.png)
+
+b*a
+![alt text](attachments/badotprod.png)
+
+np.dot(a,b) is not equal to np.dot(b,a). for matrix its equal
+
+matrix multiplication
+
+![alt text](attachments/matrixmul.png)
+
+Where dotproduct will be important for each of the cases -
+
+![alt text](attachments/dotprimportance.png)
+
