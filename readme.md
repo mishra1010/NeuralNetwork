@@ -58,3 +58,16 @@ Where dotproduct will be important for each of the cases -
 
 ![alt text](attachments/dotprimportance.png)
 
+Numpy with single neuron
+
+![alt text](attachments/singleneuron.png)
+
+Coding layer of neurons with numpy
+
+![alt text](attachments/layerofneuronsusingnumpy.png)
+
+Coding a batch of data coming to a layer with numpy
+
+![alt text](attachments/batchdatatolayer.png)
+
+# Day 3 - Coding multiple neural network layers and stcking them together
