@@ -71,3 +71,24 @@ Coding a batch of data coming to a layer with numpy
 ![alt text](attachments/batchdatatolayer.png)
 
 # Day 3 - Coding multiple neural network layers and stcking them together
+
+The real power of neural network comes from stacking a bunch of layers horizontally together.
+
+![alt text](attachments/stackinglayers.png)
+
+![alt text](attachments/layeroperation.png)
+
+input, weight and Bias
+
+output from layer 1 = np.dot(x,w1 transpose) + Bias1
+
+output from layer 2 = np.dot(output from layer1,w2 transpose) + Bias2
+.
+.
+
+output from layer 50 = np.dot(output from layer 49,w50 transpose ) + Bias50
+
+This way of performing operational calculations is called a forward pass.
+
+next is to code this
+
