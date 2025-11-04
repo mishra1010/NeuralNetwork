@@ -170,3 +170,21 @@ Now lets see ReLu - Adding i1 and i2 gives us our triangle which we wanted above
 ![alt text](attachments/ReLUworking.png)
 
 ReLU code
+
+ReLU is not a great option to use in case of classification of the spiral pattern we want. It would not be able to tell us the class as shown in the output.
+
+![alt text](attachments/relu1.png)
+
+![alt text](attachments/relu2.png)
+
+So, here all the intermediate activation functions can be ReLU but not the output one as it won't be able to predict the class. So, we will be leveraging softmax activation function. This is preferred function for multiclassifier requirement we have.It ensures that output is between 0 to 1 and just by checking probabilities we can do the classification.
+
+More probilistic outcome because of the reasons mentioned - positive and value lies between (0,1)
+
+![alt text](attachments/softmax1.png)
+
+if we have 3 outputs in a 3*3 matrix then we use the Softmax as below -
+
+![alt text](attachments/softmax2.png)
+
+
