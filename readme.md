@@ -187,4 +187,8 @@ if we have 3 outputs in a 3*3 matrix then we use the Softmax as below -
 
 ![alt text](attachments/softmax2.png)
 
+Again we see the importance of axis = 1 nd keepdims=true
+
+![alt text](attachments/keepdims1.png)
+
 
