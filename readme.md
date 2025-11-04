@@ -105,3 +105,31 @@ inputs are taken from spiral. Blue is one input, green is another input and so o
 code
 
 ![alt text](attachments/denselayer.png)
+
+# Day 5 - Broadcasting and Array summation in Python
+
+Needed to understand neural networks better
+
+![alt text](attachments/arraysummation1.png)
+
+![alt text](attachments/arraysummation2.png)
+
+These are all 1 dimension arrays
+
+![alt text](attachments/arraysumkeepdims.png)
+
+Broadcasting rules python -
+
+![alt text](attachments/broadcasting1.png)
+
+![alt text](attachments/broadcasting2.png)
+
+![alt text](attachments/broadcasting3.png)
+
+![alt text](attachments/broadcasting4.png)
+
+![alt text](attachments/broadcasting5.png)
+
+Importance of keepdims in broadcasting to get accurate answer
+
+![alt text](attachments/broadcasting6.png)
