@@ -192,3 +192,4 @@ Again we see the importance of axis = 1 nd keepdims=true
 ![alt text](attachments/keepdims1.png)
 
 
+![alt text](attachments/overallprocesswithspiraldata.png)
