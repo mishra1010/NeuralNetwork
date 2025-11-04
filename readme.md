@@ -92,3 +92,16 @@ This way of performing operational calculations is called a forward pass.
 
 next is to code this
 
+# Day 4 - Implementation of Dense Layer class in Python
+
+Generate Non-Linear data - This type of dat gives the actual patterns as linear data would not be available in all cases.
+
+![alt text](attachments/createnonlineardata.png)
+
+![alt text](attachments/spiral.png)
+
+inputs are taken from spiral. Blue is one input, green is another input and so on. Make a classifier to detect these 3 spiral colors and a detect function to separate these 3 colors. This is not a linear problem and hence complex
+
+code
+
+![alt text](attachments/denselayer.png)
