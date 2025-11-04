@@ -133,3 +133,40 @@ Broadcasting rules python -
 Importance of keepdims in broadcasting to get accurate answer
 
 ![alt text](attachments/broadcasting6.png)
+
+# Day 6 - Coding Neural Network Activation Functions from scratch
+
+
+![alt text](attachments/activationfunction.png)
+
+Why we need Activation Function?
+
+inputs -> weights -> Bias mostly available with linear data and to introduce non-linearity we need activation layer.
+
+![alt text](attachments/activationlayer.png)
+
+Activation layer is added in every layer of a forward pass
+
+![alt text](attachments/actlayerfwdpass.png)
+
+if the A1 blocks are y=x, then its an identity function and not having an activation layer.
+
+![alt text](attachments/capturenonlinearities.png)
+
+captures non linearity above
+
+Why ReLu is so powerful?
+
+introduces non liearity for better approximations
+
+![alt text](attachments/noactivation.png)
+
+shows linear output and cnno0t capture the non linearinty shown in green as no activation function is used
+
+Now lets see ReLu - Adding i1 and i2 gives us our triangle which we wanted above
+
+![alt text](attachments/ReLUact.png)
+
+![alt text](attachments/ReLUworking.png)
+
+ReLU code
