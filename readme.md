@@ -211,3 +211,43 @@ Layer Dense class -> Relu class -> Layer Dense class -> Softmax
 
 Output needs to go in to loss function which we will see next
 
+# Day 8 - Coding cross entropy loss in Python
+
+There are many loss functions and here we will look at categorical entropy loss. Initially the weights are randomly generated and hence these need to be optimized to check if we get correct outputs or not.
+
+![alt text](attachments/loss1.png)
+
+what we want here? True label - called as one hot encoding
+
+![alt text](attachments/loss2.png)
+
+so, for calculating entropy loss - look at the true value and predicted class. Based on this we can know if the predicted value is what we wanted or not.
+
+In most of the cases the answer might be in the form of one hot encoding - 00000 and if answer is a category then it becomes 1
+
+One hot encoding
+
+![alt text](attachments/onehot.png)
+
+Here the class targets were numbers and hence we were able to keep 0.5, 0.7 and 0.9 based on index. Now, what can be done? for RGB
+classification?
+
+So we do a multiplication
+
+![alt text](attachments/onehot2.png)
+
+element wise multiplication between class targets and prediction, sum it column wise, then take the negative log and then the mean as we did in the above method
+
+When class target were numbers they were just 1d, but in one hot encoding these are 2d
+
+![alt text](attachments/predictmatrixvlues.png)
+
+Now we have coded loss function and now we can go ahead and create a forward pass with the loss function
+
+loss is worst here as we have only .3 percent probability for all classes mainly because these are random weights initialized as of now and we need to optimize
+
+For this we will introduce another mesure called accuracy, easy to calculate. Take the max to get class target types
+
+![alt text](attachments/accuracy.png)
+
+Not a great metrics as it does not tell how close or how far we are but useful in case of large neural networks
