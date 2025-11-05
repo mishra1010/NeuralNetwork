@@ -193,3 +193,21 @@ Again we see the importance of axis = 1 nd keepdims=true
 
 
 ![alt text](attachments/overallprocesswithspiraldata.png)
+
+# Day 7 - Coding one neural network forward pass in Python (no loss)
+
+Here we will code an entire forward pass in python
+
+As of now we have alredy done the following -
+![alt text](attachments/done.png)
+
+![alt text](attachments/problem.png)
+
+![alt text](attachments/representation.png)
+
+we will be performing 4 mathematical operations here.
+
+Layer Dense class -> Relu class -> Layer Dense class -> Softmax
+
+Output needs to go in to loss function which we will see next
+
