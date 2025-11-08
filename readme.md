@@ -251,3 +251,44 @@ For this we will introduce another mesure called accuracy, easy to calculate. Ta
 ![alt text](attachments/accuracy.png)
 
 Not a great metrics as it does not tell how close or how far we are but useful in case of large neural networks
+
+# Day 9 - Introducing Optiization in neural Network training
+
+We have already done the neural networks code for 
+
+2 inputs , 2 hidden layers with 3 weights from each input features.
+
+so initial weights + bias = 6 weights (2X3) + 3 bias (3X1) = 9 and 2nd layer has weights = 9 and bias =3
+
+Total random weights and biases introduced = 21, total 21 values initialized which are not yet optimized. Question is how to find out optimized values.
+
+![alt text](attachments/initialvalues.png)
+
+How to find the minimum bias to get to the minima point to reduce losses
+![alt text](attachments/losses.png)
+
+How to reduce the loss?
+
+Strategy 1- Randomly select weights/biases - does not work, accuracy is less and hence confidence is low 
+
+![alt text](attachments/strategy1.png)
+
+Strategy 2 - Randomly adjust weights and biases - works better , accuracy is 94% for 10000 iterations for only simple dataset and for spiral  or complex datasets, its not great. So, this fails as well.
+
+![alt text](attachments/strategy2.png)
+
+This is the reason we would see more on how to update weights and biases. The best way is to check the slope of the function (the slope curve when loss reduces). as the loss decreases , we can check the gradient at this particular point. So, we need derivatives, gradient, partial derivatives and chain rule to get better ways of optimizations.
+
+Once we learn these we cn see back propagation to update weights and biases so that the loss keeps on decreasing.
+
+check the code in this module
+
+# Day 10 - Partial Derivtives and Gradient in Neural Networks
+
+We need to understand the impact of weights and biases on the loss and change them accordingly.
+
+![alt text](attachments/impactofchange.png)
+
+slope of a function - We check at the tangent in the curve and calculate the change to calculate the slope.
+
+![alt text](attachments/slope1.png)
