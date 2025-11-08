@@ -289,6 +289,53 @@ We need to understand the impact of weights and biases on the loss and change th
 
 ![alt text](attachments/impactofchange.png)
 
-slope of a function - We check at the tangent in the curve and calculate the change to calculate the slope.
+slope of a function - We check at the tangent in the curve and calculate the change to calculate the slope. Derivative is calculated to get this value.
 
 ![alt text](attachments/slope1.png)
+
+Tangent line gives the impact of x on y, deltax and deltay
+
+![alt text](attachments/derivative1.png)
+
+d/dx(x^n) = nx^n-1
+
+Gradient
+
+What if x is a fuction of y and z? 
+
+f(x,y,z) - how do we find derivative?
+
+For functions of multiple inputs, we have the concept of partial derivatives which gives us impact of every single input on output.
+
+![alt text](attachments/partialderivative1.png)
+
+![alt text](attachments/partialderivative2.png)
+
+Derivative of a constant is 0.
+
+![alt text](attachments/pd3.png)
+
+3 varibles - we have to take pd for 3 variables
+
+![alt text](attachments/pd4.png)
+![alt text](attachments/pd5.png)
+
+![alt text](attachments/pd6.png)
+
+Gradient - gives us direction of steepest ascent and we need steepest descent which is 
+
+Vector of all partial derivatives
+
+![alt text](attachments/gradient1.png)
+
+![alt text](attachments/gradient2.png)
+
+minimize loss function
+
+![alt text](attachments/gradient3.png)
+
+When we look at back propagation this loss will be multidimensional loss function of weights, biases etc.
+
+Summary
+
+![alt text](attachments/summary.png)
