@@ -339,3 +339,24 @@ When we look at back propagation this loss will be multidimensional loss functio
 Summary
 
 ![alt text](attachments/summary.png)
+
+# Day11 - Understand chain rule - backbone of backpropagation in Neural Networks
+
+Chain Rule
+
+![alt text](attachments/chainrule.png)
+
+
+y is a function of x but through another function g(x). so, its called chain rule, chining 2 functions here.
+
+y = f(x)
+dy/dx = f'(x)
+
+y = f(g(x))
+dy/dx = f'*g'
+
+![alt text](attachments/chainrule1.png)
+
+
+All this is done to find the loss function in the neural network by getting derivative.
+
