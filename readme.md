@@ -360,3 +360,36 @@ dy/dx = f'*g'
 
 All this is done to find the loss function in the neural network by getting derivative.
 
+# Day 12 - Backpropagation from scratch on a single neuron - Engine of neural networks
+
+![alt text](attachments/bp1.png)
+
+![alt text](attachments/bp2.png)
+
+Output representation of neuron
+
+![alt text](attachments/oprep1.png)
+
+How to optimize the weights and biases of the nwuron so that loss is close to 0?
+
+Strategy used is grdient descent.
+
+we need to move in the direction of negtive gradient to get minimum loss.
+
+![alt text](attachments/bp3.png)
+
+![alt text](attachments/bp4.png)
+
+![alt text](attachments/bp5.png)
+
+![alt text](attachments/bp6.png)
+
+Why it is clled back propagation?
+
+![alt text](attachments/bp7.png)
+
+![alt text](attachments/bp8.png)
+
+![alt text](attachments/calculation.png)
+
+![alt text](attachments/gdcalculation1.png)
