@@ -393,3 +393,153 @@ Why it is clled back propagation?
 ![alt text](attachments/calculation.png)
 
 ![alt text](attachments/gdcalculation1.png)
+
+# Day 13 - Back propagation  through an entire layer of neurons from scratch
+
+ ![alt text](attachments/bplayer1.png)
+
+ ![alt text](attachments/bplayer2.png)
+
+ ![alt text](attachments/bplayer3.png)
+
+ what are the true value so that we get the least loss value?
+ what are the values of weights and biases such that a1+a2+a3 is nearly 0.
+
+ 12 weight parameters and 3 bias parameters, total 15 parameters to be optimized.
+
+ How to optimize these parameters using backpropagation?
+
+
+![alt text](attachments/bpchainrule.png)
+
+# Day 14 - Role of matrices in backpropagation
+
+![alt text](attachments/matrix1.png)
+
+Previous lessons, we just took chain derivatives and not martices. Imagine we have too many weights and biases then we have to write and calculate that many partial derivatives for weights and bias.
+
+![alt text](attachments/toomanyweights.png)
+
+knowledge needed here would be transpose and knowledge of matrices
+
+![alt text](attachments/matrix1.png)
+
+4 inputs x1,x2,x3 and x4. we will look at 1 layer with 3 neurons. output of these neurons are z1,z2 and z3
+
+z1 = w11*x1+w12*x2+w13*x3+w14*x4+b1 -> ReLU ()->a1
+similarly for z2, and z3
+
+Output a1,a2,a3 are passed through a neuron whose weight is fixed to 1 and this gives 
+y = a1+a2+a3
+
+then this is passed through loss function
+L= (a1+a2+3)^2
+
+Partial derivative using backpropagation
+
+![alt text](attachments/partder1.png)
+
+![alt text](attachments/partder2.png)
+
+![alt text](attachments/partder3.png)
+
+How these partial matrix can be converted to matrix notation?
+
+![alt text](attachments/matrixnot1.png)
+
+Neuron matrix
+
+![alt text](attachments/matrixnot2.png)
+
+Input and neuron matrix
+
+![alt text](attachments/matrixnot3.png)
+
+Next is transpose of input matrix and multiplication, but we need to check if it is possible or not? It seems the number of columns in input is equl to number of rows in the neuron matrix.
+
+![alt text](attachments/matrixnot4.png)
+
+resultant matrix is 4*3 matrix
+
+![alt text](attachments/matrixnot5.png)
+
+first column gives partial derivative of loss for first neuron weights, similarly for second neuron weights and so on.
+
+how weights are multiplied with input toi get the partial derivatives
+![alt text](attachments/matrixnot6.png)
+
+so, we need not write the partil derivative one by one and in one matrix we get the partial derivative of all the weights.
+
+We can use this mtrix when calculating gradient descent.
+
+Till now we saw partial derivative of loss with respect to weights and now we will see partial derivative of loss with respect to biases.
+
+This can be expressed as
+dl/db1 = dl/dz1*dz1/db1 (partial derivatives)
+
+z1/b1 is the swmmation (w*x for various inputs and weights) and hence always equal to 1. So, what will remain is partial derivative of loss with respect to z1.
+
+Matrix for partial derivtive of loss with resect to biases
+
+[dl/dz1 dl/dz2 dl/dz3]
+
+![alt text](attachments/losswweights.png)
+
+![alt text](attachments/bpcheck1.png)
+
+Just by taking the product of matrices we obtain the same results as we obtained as before where we calculated each detail separately. Here its just calculated in one matrix form.
+
+For biases we just use dl-dz values
+
+As of now, we have not checked with a btch of input data. only one input is coming as of now. What if there was multiple batch of data coming in? ex- to predict cat or dogs we get multiple batch of data and neural network needs to predict.
+
+Although multiple batch of inputs come in, the weights do not change for the multiple batches of inputs. There would be only 1 w11,w12,w13,w14 and b1. Similarly for other inputs and weights.
+
+Implement back propagation for Batch of Input Data with this formula
+
+![alt text](attachments/bpbatch1.png)
+
+first batch, second batch and so on
+
+![alt text](attachments/bpbatch2.png)
+
+![alt text](attachments/bpbatch3.png)
+
+![alt text](attachments/bpbatch4.png)
+
+Summation of partial batch of 3 input batch losses
+
+![alt text](attachments/bpbatch5.png)
+
+![alt text](attachments/bpbatch6.png)
+
+Computation of partial derivatives for all losses wrt weight
+
+![alt text](attachments/bpbatch7.png)
+
+computation of partial derivatives for all losses wrt bias
+
+![alt text](attachments/bpbatch8.png)
+
+1+2+3=6
+
+Partial derivative wrt loss calculation
+
+![alt text](attachments/bpbatch9.png)
+
+so, now we get weight gradient matrix and bias gradient matrix
+
+![alt text](attachments/gm1.png)
+
+Calculation using formula
+
+![alt text](attachments/gm2.png)
+
+using numpy also we get the same results
+
+![alt text](attachments/gm3.png)
+
+For single batch of data and multiple batch of data this works
+
+# Day 15 - Finding derivatives of inputs in backpropagation and why we need them?
+
