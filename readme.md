@@ -543,3 +543,43 @@ For single batch of data and multiple batch of data this works
 
 # Day 15 - Finding derivatives of inputs in backpropagation and why we need them?
 
+Gradients of Loss with inputs due to backpropagation
+
+![alt text](attachments/gr1.png)
+
+inputs of one layer are outputs of another layer.
+
+![alt text](attachments/gr2.png)
+
+![alt text](attachments/gr3.png)
+
+![alt text](attachments/fwdpass1.png)
+
+this is how we calculate partial derivative of loss with respect to x1, x2, x3 and x4
+
+Matrix representation
+
+![alt text](attachments/matrix11.png)
+
+We need to take transpose of Weight matrix as columns of first matrix is not same as rows of the second matrix
+
+![alt text](attachments/weight10.png)
+
+![alt text](attachments/weight11.png)
+
+dl-dx * weights^t 
+![alt text](attachments/parderwt.png)
+
+Does this work for a batch of input data?
+
+![alt text](attachments/batchin1.png)
+
+first row gives partial derivative for 1st input batch
+second row gives partial derivative for 2nd input batch
+similarly 3rd one
+
+![alt text](attachments/batchin2.png)
+
+partial derivative of weights and inputs
+
+![alt text](attachments/batchin3.png)
